@@ -1,0 +1,19 @@
+{
+  "name": "lost-pixel-auto-pr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "d-ivashchuk",
+  "license": "MIT",
+  "scripts": {
+    "serve": "npx serve build -p 61000",
+    "build": "ladle build"
+  },
+  "dependencies": {
+    "@ladle/react": "^2.0.2",
+    "lost-pixel": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
