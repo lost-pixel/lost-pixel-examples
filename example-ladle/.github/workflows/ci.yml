@@ -24,4 +24,4 @@ jobs:
         run: npm run serve &
 
       - name: Lost Pixel
-        uses: lost-pixel/lost-pixel-action@v2.5.0
+        uses: lost-pixel/lost-pixel@v2.15.0
