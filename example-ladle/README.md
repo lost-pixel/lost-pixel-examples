@@ -5,7 +5,7 @@ Install the dependencies by running `npm install`
 
 ## Lost-Pixel 
 
-`npm run build-storybook` - to build local static version of storybook
+`npm run build && npm run serve` - to build the ladle project and serve it locally
 
 `npm run lost-pixel` - to run visual regression tests locally
 
