@@ -1,3 +1,9 @@
+import {
+  screen
+} from '@testing-library/dom'
+
+import userEvent from '@testing-library/user-event'
+
 import { createInteractiveButton } from './ReactiveButton';
 
 // More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
@@ -26,14 +32,21 @@ const Template = ({ label, ...args }) => {
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/html/writing-stories/args
 Primary.args = {
-  label: 'Button',
+  label: 'ClickMe',
 };
 
 Primary.play = async () => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      console.log('Hello from async function')
-      resolve();
-    }, 1000)
+
+
+  await new Promise(resolve => {
+    setTimeout(resolve, 100)
   })
+
+  const user = userEvent.setup()
+
+  const button = await screen.findByRole('button', {
+    name: /clickme/i
+  });
+
+  await user.click(button);
 }

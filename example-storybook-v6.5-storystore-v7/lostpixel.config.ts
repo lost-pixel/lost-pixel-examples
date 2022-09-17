@@ -8,4 +8,7 @@ export const config: CustomProjectConfig = {
   },
   generateOnly: true,
   failOnDifference: true,
+  beforeScreenshot(page) {
+    page.waitForFunction(() => __STORYBOOK_PREVIEW__.currentRender.phase === 'completed')
+  },
 };
