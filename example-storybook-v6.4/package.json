@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lost-pixel": "lost-pixel",
+    "lost-pixel:update": "lost-pixel update"
   },
   "author": "Chris Kalmar",
   "license": "MIT",
@@ -19,6 +21,6 @@
     "@storybook/addon-links": "^6.4.9",
     "@storybook/html": "^6.4.9",
     "babel-loader": "^8.2.3",
-    "lost-pixel": "^1.12.1"
+    "lost-pixel": "^2.17.0"
   }
 }

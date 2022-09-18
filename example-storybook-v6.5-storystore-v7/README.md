@@ -7,9 +7,9 @@ Install the dependencies by running
 
 ## Lost-Pixel 
 
-`npm run build storybook` - to build local static version of storybook
+`npm run build-storybook` - to build local static version of storybook
 
-`npm run lost-pixel:run` - to run visual regression tests locally
+`npm run lost-pixel` - to run visual regression tests locally
 
 `npm run lost-pixel:update` - to update the baselines locally
 
